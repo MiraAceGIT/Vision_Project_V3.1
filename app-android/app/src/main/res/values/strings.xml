@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Blind Helmet Vision</string>
+    <string name="status_disconnected">Déconnecté</string>
+    <string name="status_connecting">Connexion...</string>
+    <string name="status_connected">Connecté à l\'ESP32</string>
+    <string name="btn_connect">Connecter</string>
+    <string name="btn_disconnect">Déconnecter</string>
+    <string name="label_status">Statut</string>
+    <string name="label_preview">Aperçu Camera</string>
+    <string name="label_detection">Détection</string>
+    <string name="label_stats">Statistiques</string>
+    <string name="error_yolo">Erreur YOLO</string>
+    <string name="error_permission">Permissions refusées</string>
+    <string name="msg_waiting">En attente...</string>
+</resources>

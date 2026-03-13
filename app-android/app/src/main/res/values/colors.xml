@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#2196F3</color>
+    
+    <!-- Dark Mode Colors -->
+    <color name="black">#1E1E1E</color>
+    <color name="white">#E0E0E0</color>
+    <color name="gray">#B0B0B0</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="primary_blue">#64B5F6</color>
+    <color name="accent_orange">#FF9800</color>
+</resources>

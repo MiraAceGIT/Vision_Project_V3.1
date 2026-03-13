@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Android build
+app-android/app/build/
+app-android/build/
+app-android/.gradle/
+app-android/.idea/
+app-android/local.properties
+*.apk
+*.aab
+
+# Système
+.DS_Store
+*.o
+*.a

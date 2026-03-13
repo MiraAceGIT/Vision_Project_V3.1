@@ -1,0 +1,15 @@
+person
+bicycle
+car
+motorcycle
+truck
+bus
+train
+traffic light
+stop sign
+dog
+cat
+bottle
+cup
+backpack
+chair

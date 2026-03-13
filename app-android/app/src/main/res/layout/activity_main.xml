@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_dark">
+
+    <!-- Status Section -->
+    <TextView
+        android:id="@+id/status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statut"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prêt à connecter"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_background" />
+
+    <!-- Connection Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:spacing="8dp">
+
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Connecter"
+            android:textSize="14sp"
+            android:backgroundTint="@color/primary_blue"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_disconnect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Déconnecter"
+            android:textSize="14sp"
+            android:backgroundTint="@color/accent_orange"
+            android:textColor="@color/white"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <!-- Preview Image -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aperçu Camera"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp" />
+
+    <com.blind_helmet.app.AnnotatedImageView
+        android:id="@+id/preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/rounded_background"
+        android:contentDescription="Camera Preview" />
+
+    <!-- Detection Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Détection"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/detection_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="En attente de détections..."
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_background" />
+
+    <!-- Statistics Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistiques"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/stats_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="En attente de connexion..."
+        android:textSize="11sp"
+        android:textColor="@color/gray"
+        android:fontFamily="monospace"
+        android:padding="12dp"
+        android:background="@drawable/rounded_background"
+        android:maxLines="10"
+        android:scrollbars="vertical" />
+
+    <!-- Alert Control Button - Gros bouton en bas -->
+    <Button
+        android:id="@+id/btn_alert_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="🔔 ALERTES ACTIVES\nCliquez pour désactiver"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primary_blue"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+# YOLO v8 Nano Model Specifications
+
+**Model Name:** yolov8n.tflite  
+**Framework:** TensorFlow Lite  
+**Quantization:** INT8 (integer quantized)  
+**File Size:** 6.5 MB  
+**Input Shape:** [1, 320, 320, 3] (RGB, uint8, normalized to 0-255)  
+**Output Shape:** [1, 25200, 20] (predictions × [4 coords + confidence + 15 classes])
+
+## Classes (15 Total)
+
+0. person (person/people)
+1. bicycle
+2. car
+3. motorcycle
+4. truck
+5. bus
+6. train
+7. traffic light (traffic light/traffic signal)
+8. stop sign
+9. dog
+10. cat
+11. bottle
+12. cup
+13. backpack
+14. chair
+
+## Performance
+
+| Metric | Value | Notes |
